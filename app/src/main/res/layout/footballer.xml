@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="?colorOnPrimary"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10dp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/tvTittle"
+            tools:text="Ricardo Quaresma"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"/>
+        <ImageView
+            android:id="@+id/ivDelete"
+            tools:src="@drawable/delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"/>
+
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
